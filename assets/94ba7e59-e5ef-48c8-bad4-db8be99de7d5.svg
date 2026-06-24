@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="sh-line-svg" viewBox="0 0 320 18" width="320" height="18">
+        <path class="sh-leaf-path" d="M10,9 L55,9 L65,4 L75,9 L85,14 L95,9 L160,9 L225,9 L235,4 L245,9 L255,14 L265,9 L310,9" fill="none" stroke="#C8960A" stroke-width="1" opacity=".60"></path>
+        <circle cx="75" cy="9" r="3" fill="#C8960A" opacity=".65"></circle>
+        <circle cx="160" cy="9" r="4" fill="#E8C890" opacity=".60"></circle>
+        <circle cx="245" cy="9" r="3" fill="#C8960A" opacity=".65"></circle>
+        <path d="M153,9 L160,4 L167,9 L160,14Z" fill="none" stroke="#C8960A" stroke-width=".8" opacity=".55"></path>
+      </svg>

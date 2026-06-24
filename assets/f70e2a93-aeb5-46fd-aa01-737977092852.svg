@@ -1,0 +1,10 @@
+<svg class="wb-wave wb-wave--3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 220" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="wg3" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#5C1E90" stop-opacity="0.0"></stop>
+          <stop offset="10%" stop-color="#5C1E90" stop-opacity="0.5"></stop>
+          <stop offset="100%" stop-color="#2A0C50" stop-opacity="1.0"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,100 C180,50  360,150 540,100 C720,50  900,150 1080,100 C1260,50 1440,150 1620,100 C1800,50 1980,150 2160,100 C2340,50 2610,140 2880,100 L2880,220 L0,220 Z" fill="url(#wg3)"></path>
+    </svg>

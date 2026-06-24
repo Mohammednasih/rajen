@@ -1,0 +1,16 @@
+<svg class="wb-wave wb-wave--2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 280" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="wg2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#4A1878" stop-opacity="0.0"></stop>
+          <stop offset="12%" stop-color="#4A1878" stop-opacity="0.55"></stop>
+          <stop offset="100%" stop-color="#220A42" stop-opacity="0.95"></stop>
+        </linearGradient>
+        <!-- subtle golden shimmer at crest -->
+        <linearGradient id="wg2s" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#C8960A" stop-opacity="0.18"></stop>
+          <stop offset="8%" stop-color="#C8960A" stop-opacity="0.0"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,130 C360,60  720,200 1080,130 C1440,60  1800,200 2160,130 C2520,60  2760,180 2880,130 L2880,280 L0,280 Z" fill="url(#wg2)"></path>
+      <path d="M0,130 C360,60  720,200 1080,130 C1440,60  1800,200 2160,130 C2520,60  2760,180 2880,130 L2880,145 C2760,195 2520,75 2160,145 C1800,215 1440,75 1080,145 C720,215 360,75 0,145 Z" fill="url(#wg2s)"></path>
+    </svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="ft-lotus" viewBox="0 0 80 44" width="66" aria-hidden="true">
+    <!-- Kolam 8-petal lotus -->
+    <ellipse cx="40" cy="36" rx="7" ry="14" fill="#C8960A" opacity=".18" transform="rotate(-45 40 36)"></ellipse>
+    <ellipse cx="40" cy="36" rx="7" ry="14" fill="#4A1E6E" opacity=".16" transform="rotate(0   40 36)"></ellipse>
+    <ellipse cx="40" cy="36" rx="7" ry="14" fill="#C8960A" opacity=".18" transform="rotate(45  40 36)"></ellipse>
+    <ellipse cx="40" cy="36" rx="7" ry="14" fill="#4A1E6E" opacity=".16" transform="rotate(90  40 36)"></ellipse>
+    <ellipse cx="40" cy="36" rx="7" ry="14" fill="#C8960A" opacity=".18" transform="rotate(135 40 36)"></ellipse>
+    <circle cx="40" cy="36" r="5" fill="#C8960A" opacity=".45"></circle>
+    <!-- Small kolam diamond above -->
+    <path d="M36,20 L40,14 L44,20 L40,26Z" fill="none" stroke="#C8960A" stroke-width=".8" opacity=".38"></path>
+  </svg>

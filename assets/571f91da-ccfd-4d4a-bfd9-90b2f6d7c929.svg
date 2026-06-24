@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="rsvp-fl rsvp-fl--tl" viewBox="0 0 180 180" fill="none">
+      <ellipse cx="60" cy="90" rx="16" ry="40" fill="#4A1E6E" opacity=".06" transform="rotate(-30 60 90)"></ellipse>
+      <ellipse cx="90" cy="55" rx="13" ry="34" fill="#C8960A" opacity=".05" transform="rotate(20 90 55)"></ellipse>
+      <ellipse cx="115" cy="95" rx="15" ry="36" fill="#C84060" opacity=".04" transform="rotate(60 115 95)"></ellipse>
+      <path d="M80,80 L88,70 L96,80 L88,90Z" fill="#C8960A" opacity=".09"></path>
+    </svg>

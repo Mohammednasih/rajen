@@ -1,0 +1,4 @@
+<svg class="si-wave si-wave--2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 360" preserveAspectRatio="none">
+      <defs><linearGradient id="siwg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4A1878" stop-opacity="0.0"></stop><stop offset="20%" stop-color="#3C1268" stop-opacity="0.5"></stop><stop offset="100%" stop-color="#220A42" stop-opacity="0.85"></stop></linearGradient></defs>
+      <path d="M0,150 C480,70 960,230 1440,150 C1920,70 2400,230 2880,150 L2880,360 L0,360 Z" fill="url(#siwg2)"></path>
+    </svg>

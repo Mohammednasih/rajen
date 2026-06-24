@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="pl-mandala" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+        <!-- Ring 3 — outer -->
+        <circle class="pl-m-ring pl-m-r3" cx="60" cy="60" r="54" fill="none" stroke="#C8960A" stroke-width="1.2" stroke-linecap="round"></circle>
+        <!-- Ring 2 — mid -->
+        <circle class="pl-m-ring pl-m-r2" cx="60" cy="60" r="40" fill="none" stroke="#4A1E6E" stroke-width="1.0" stroke-linecap="round"></circle>
+        <!-- Ring 1 — inner -->
+        <circle class="pl-m-ring pl-m-r1" cx="60" cy="60" r="26" fill="none" stroke="#C8960A" stroke-width="0.8" stroke-linecap="round"></circle>
+        <!-- 8 petals alternating gold/purple -->
+        <g class="pl-m-petals">
+          <ellipse cx="60" cy="14" rx="4" ry="9" fill="#C8960A" opacity=".55" transform="rotate(0   60 60)"></ellipse>
+          <ellipse cx="60" cy="14" rx="4" ry="9" fill="#4A1E6E" opacity=".50" transform="rotate(45  60 60)"></ellipse>
+          <ellipse cx="60" cy="14" rx="4" ry="9" fill="#C8960A" opacity=".55" transform="rotate(90  60 60)"></ellipse>
+          <ellipse cx="60" cy="14" rx="4" ry="9" fill="#4A1E6E" opacity=".50" transform="rotate(135 60 60)"></ellipse>
+          <ellipse cx="60" cy="14" rx="4" ry="9" fill="#C8960A" opacity=".55" transform="rotate(180 60 60)"></ellipse>
+          <ellipse cx="60" cy="14" rx="4" ry="9" fill="#4A1E6E" opacity=".50" transform="rotate(225 60 60)"></ellipse>
+          <ellipse cx="60" cy="14" rx="4" ry="9" fill="#C8960A" opacity=".55" transform="rotate(270 60 60)"></ellipse>
+          <ellipse cx="60" cy="14" rx="4" ry="9" fill="#4A1E6E" opacity=".50" transform="rotate(315 60 60)"></ellipse>
+        </g>
+        <!-- Centre dot -->
+        <circle class="pl-m-dot" cx="60" cy="60" r="4" fill="#C8960A" opacity=".80"></circle>
+      </svg>

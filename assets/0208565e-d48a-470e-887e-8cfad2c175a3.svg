@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 52" width="100%" preserveAspectRatio="xMidYMid meet">
+    <path d="M400,26 Q270,8 140,20 Q70,28 0,22" fill="none" stroke="#4A1E6E" stroke-width=".9" opacity=".38"></path>
+    <path d="M400,26 Q530,8 660,20 Q730,28 800,22" fill="none" stroke="#4A1E6E" stroke-width=".9" opacity=".38"></path>
+    <!-- Kolam diamond at centre -->
+    <path d="M388,26 L400,16 L412,26 L400,36Z" fill="none" stroke="#C8960A" stroke-width="1" opacity=".55"></path>
+    <circle cx="400" cy="26" r="3" fill="#C8960A" opacity=".60"></circle>
+    <!-- Kolam dots along branches -->
+    <circle cx="240" cy="16" r="3" fill="#4A1E6E" opacity=".38"></circle>
+    <circle cx="160" cy="20" r="2.5" fill="#C8960A" opacity=".35"></circle>
+    <circle cx="560" cy="16" r="3" fill="#4A1E6E" opacity=".38"></circle>
+    <circle cx="640" cy="20" r="2.5" fill="#C8960A" opacity=".35"></circle>
+  </svg>
