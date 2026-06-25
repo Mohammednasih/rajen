@@ -240,6 +240,19 @@
   }
 </script>
 <style>
+/* Remove double scroll / sticky pinning for hero section */
+.hero-wrap {
+  height: 100vh !important;
+  height: 100svh !important;
+}
+.hero-pin {
+  position: relative !important;
+  height: 100vh !important;
+  height: 100svh !important;
+  top: auto !important;
+  min-height: 0 !important;
+}
+
 /* Centered vertical column layout for hero section names */
 .hero-pin .hero-copy {
   flex-direction: column !important;
@@ -317,6 +330,35 @@ body.pl-active {
   transform: translateY(-2px) !important;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22) !important;
   background: #4a1e6e !important;
+}
+
+/* Custom YouTube Live Stream hover styling */
+.live-stream-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(196, 48, 43, 0.45) !important;
+  background: #e52d27 !important;
+}
+.live-stream-icon-wrap {
+  transition: transform 0.3s ease !important;
+}
+.live-stream-icon-wrap:hover {
+  transform: scale(1.08) !important;
+}
+.st-rv-parent-info {
+  font-family: var(--ff-b), sans-serif;
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+  color: rgba(232, 200, 144, 0.85);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s var(--bloom) .18s, transform 1.2s var(--bloom) .18s;
+}
+.st-reveal.revealed .st-rv-parent-info {
+  opacity: 0.95;
+  transform: translateY(0);
 }
 </style>
 </head>
@@ -649,6 +691,9 @@ body.pl-active {
           <span class="sh-eye">మా పరిచయం</span>
           <h2 class="sh-h">వధూవరులు</h2>
         </div>
+        <div class="st-rv-parent-info">
+          కీ.శే. రేవకుంట చంద్రపాల్ - శ్రీమతి సుజాత గార్ల ఏకైక పుత్రుడు
+        </div>
         <div class="st-rv-names" id="stRvNames">
           <span class="st-rv-bride" id="stRvBride">చి.ల.సౌ. శ్రీహిత</span>
           <span class="st-rv-amp">&amp;</span>
@@ -776,6 +821,11 @@ body.pl-active {
 <!-- RSVP -->
 <!-- HOSTS / INVITERS SECTION -->
 <section id="hosts" class="s-hosts" style="background:#F8F2E4; padding:80px 24px; text-align:center; position:relative; overflow:hidden;">
+  <!-- Banana-flower toran -->
+  <div class="rsvp-toran" aria-hidden="true">
+    <img src="assets/Background_4.png" alt="" class="toran-img">
+  </div>
+  
   <div class="hosts-paper-veil" style="position:absolute; inset:0; background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 100%); pointer-events:none;"></div>
   
   <div class="container hosts-body" style="max-width: 600px; margin: 0 auto; position: relative; z-index: 1;">
@@ -820,6 +870,51 @@ body.pl-active {
   </div>
 </section>
 
+<!-- YOUTUBE LIVE SECTION -->
+<section id="live-stream" class="s-live-stream" style="background:#F8F2E4; padding:60px 24px; text-align:center; position:relative; overflow:hidden;">
+  <div class="container live-stream-body">
+    <!-- Decorative border divider -->
+    <div class="live-stream-rule scroll-in" style="margin-bottom: 24px;">
+      <svg viewBox="0 0 400 12" width="100%" style="max-width:400px; display: block; margin: 0 auto;">
+        <line x1="0" y1="6" x2="168" y2="6" stroke="#C8960A" stroke-width=".7" opacity=".35"></line>
+        <path d="M184,6 L192,1 L200,6 L192,11Z" fill="#C8960A" opacity=".52"></path>
+        <line x1="208" y1="6" x2="400" y2="6" stroke="#C8960A" stroke-width=".7" opacity=".35"></line>
+      </svg>
+    </div>
+
+    <!-- Section Heading -->
+    <span class="live-stream-eye scroll-in" style="display:block; font-size:0.55rem; letter-spacing:0.22em; text-transform:uppercase; color:rgba(0,0,0,0.35); margin-bottom:10px; font-family:inherit;">ప్రత్యక్ష ప్రసారం</span>
+    <h2 class="live-stream-heading scroll-in" style="font-family:'Cinzel', serif; font-size:clamp(1.4rem, 4vw, 2.2rem); color:#3D1E2E; margin-bottom: 20px;">యూట్యూబ్ లైవ్ స్ట్రీమ్ (YouTube Live)</h2>
+
+    <!-- YouTube Icon (Borderless, size 72px) -->
+    <div class="live-stream-icon-wrap scroll-in" style="margin: 0 auto 24px; display: inline-block;">
+      <img src="assets/youtube.png" alt="YouTube Live Icon" style="width: 72px; height: 72px; object-fit: contain; display: block; margin: 0 auto;">
+    </div>
+
+    <!-- Description -->
+    <p class="live-stream-desc scroll-in" style="font-family: inherit; font-size: 1.05rem; line-height: 1.65; color: #4A1E6E; max-width: 600px; margin: 0 auto 24px; font-weight: 500;">
+      మా వివాహ శుభకార్యాన్ని యూట్యూబ్‌లో ప్రత్యక్ష ప్రసారం ద్వారా వీక్షించి మమ్మల్ని ఆశీర్వదించండి.
+    </p>
+
+    <!-- YouTube Button (No inner SVG) -->
+    <div class="live-stream-cta-wrap scroll-in" style="margin-bottom: 24px;">
+      <a class="live-stream-btn" href="https://www.youtube.com/live/tPhjuEJ3Gs8?si=iRRmbNdco4xNZPK8" target="_blank" rel="noopener noreferrer" 
+         style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 12px 28px; background: #C4302B; color: #FFFFFF; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: inherit; border: 1px solid rgba(255, 0, 0, 0.3); box-shadow: 0 4px 16px rgba(196, 48, 43, 0.25); transition: transform 0.3s ease, box-shadow 0.3s ease; font-weight: 600;">
+        లైవ్ ప్రసారాన్ని చూడటానికి ఇక్కడ క్లిక్ చేయండి
+      </a>
+    </div>
+
+    <!-- Decorative border divider bottom -->
+    <div class="live-stream-rule scroll-in" style="margin-top: 24px;">
+      <svg viewBox="0 0 400 12" width="100%" style="max-width:400px; display: block; margin: 0 auto;">
+        <line x1="0" y1="6" x2="168" y2="6" stroke="#C8960A" stroke-width=".7" opacity=".35"></line>
+        <path d="M184,6 L192,1 L200,6 L192,11Z" fill="#C8960A" opacity=".52"></path>
+        <line x1="208" y1="6" x2="400" y2="6" stroke="#C8960A" stroke-width=".7" opacity=".35"></line>
+      </svg>
+    </div>
+  </div>
+</section>
+
 <!-- VENUE / LOCATION SECTION -->
 <section id="venue" class="s-venue" style="background:#F8F2E4; padding:60px 24px; text-align:center; position:relative; overflow:hidden;">
   <div class="container venue-body">
@@ -850,9 +945,7 @@ body.pl-active {
     <div class="venue-cta-wrap scroll-in" style="margin-bottom: 24px;">
       <a class="venue-maps-btn" href="https://maps.app.goo.gl/wpFQ5wj93gJ3rMLP7?g_st=ic" target="_blank" rel="noopener noreferrer" 
          style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 12px 28px; background: #3D1E2E; color: #FAF3E8; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: inherit; border: 1px solid rgba(200, 150, 10, 0.35); box-shadow: 0 4px 16px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align: middle;">
-          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-        </svg>
+        <img src="assets/google_map_icon.png" alt="Google Map Icon" style="width: 36px; height: 36px; object-fit: contain; vertical-align: middle;">
         గూగుల్ మ్యాప్స్‌లో చూడటానికి ఇక్కడ క్లిక్ చేయండి
       </a>
     </div>
@@ -890,6 +983,11 @@ body.pl-active {
 
 <script src="https://pub-1cc0f6e993214be9a36badeeb631f4b6.r2.dev/templates/template05/script.js?v=d6b8aa0e34d201c7bf443a86d0a90a979873cdc1"></script>
 <script>
+// Disable hero zoom scroll parallax
+window.getHeroProgress = function() {
+  return 0;
+};
+
 // Override the petal image sources in the external template script to use local Element_2.png
 (function overridePetalAssets() {
   if (typeof Petals !== 'undefined') {
@@ -1213,11 +1311,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   } catch (_) {}
 
-  var rsvp = document.getElementById('rsvp') ||
-             document.querySelector('[id*="rsvp"]') ||
-             document.querySelector('[class*="rsvp"]');
-  if (rsvp && rsvp.parentNode) {
-    rsvp.parentNode.insertBefore(section, rsvp.nextSibling);
+  var footer = document.querySelector('footer') ||
+               document.querySelector('.footer');
+  if (footer && footer.parentNode) {
+    footer.parentNode.insertBefore(section, footer);
   } else {
     document.body.appendChild(section);
   }
