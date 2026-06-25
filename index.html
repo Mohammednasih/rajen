@@ -774,60 +774,44 @@ body.pl-active {
 </div>
 
 <!-- RSVP -->
-<section id="rsvp" class="s-rsvp">
-  <div class="rsvp-paper-veil"></div>
-  <div class="rsvp-florals" aria-hidden="true">
-    <svg class="rsvp-fl rsvp-fl--tl" viewBox="0 0 180 180" fill="none">
-      <ellipse cx="60" cy="90" rx="16" ry="40" fill="#4A1E6E" opacity=".06" transform="rotate(-30 60 90)"></ellipse>
-      <ellipse cx="90" cy="55" rx="13" ry="34" fill="#C8960A" opacity=".05" transform="rotate(20 90 55)"></ellipse>
-      <ellipse cx="115" cy="95" rx="15" ry="36" fill="#C84060" opacity=".04" transform="rotate(60 115 95)"></ellipse>
-      <path d="M80,80 L88,70 L96,80 L88,90Z" fill="#C8960A" opacity=".09"></path>
-    </svg>
-    <svg class="rsvp-fl rsvp-fl--br" viewBox="0 0 180 180" fill="none">
-      <ellipse cx="60" cy="90" rx="16" ry="40" fill="#4A1E6E" opacity=".06" transform="rotate(-30 60 90)"></ellipse>
-      <ellipse cx="90" cy="55" rx="13" ry="34" fill="#C8960A" opacity=".05" transform="rotate(20 90 55)"></ellipse>
-      <path d="M80,80 L88,70 L96,80 L88,90Z" fill="#C8960A" opacity=".09"></path>
-    </svg>
-    <svg class="rsvp-fl rsvp-fl--tr" viewBox="0 0 120 120" fill="none">
-      <ellipse cx="40" cy="60" rx="9" ry="25" fill="#4A1E6E" opacity=".06" transform="rotate(15 40 60)"></ellipse>
-      <ellipse cx="75" cy="45" rx="8" ry="21" fill="#C8960A" opacity=".05" transform="rotate(-40 75 45)"></ellipse>
-    </svg>
-    <svg class="rsvp-fl rsvp-fl--bl" viewBox="0 0 120 120" fill="none">
-      <ellipse cx="40" cy="60" rx="9" ry="25" fill="#4A1E6E" opacity=".06" transform="rotate(15 40 60)"></ellipse>
-      <ellipse cx="75" cy="45" rx="8" ry="21" fill="#C8960A" opacity=".05" transform="rotate(-40 75 45)"></ellipse>
-    </svg>
-  </div>
-
-  <img class="s-diya-l" src="assets/Element_1.png" alt="" aria-hidden="true">
-  <img class="s-diya-r" src="assets/Element_1.png" alt="" aria-hidden="true">
-  <div class="rsvp-toran" aria-hidden="true">
-    <img src="assets/Background_4.png" alt="" class="toran-img">
-  </div>
-  <div id="petalRsvp" class="petal-canvas"></div>
-
-  <div class="container rsvp-body">
-    <div class="rsvp-rule scroll-in">
-      <svg viewBox="0 0 400 12" width="100%" style="max-width:400px">
+<!-- HOSTS / INVITERS SECTION -->
+<section id="hosts" class="s-hosts" style="background:#F8F2E4; padding:80px 24px; text-align:center; position:relative; overflow:hidden;">
+  <div class="hosts-paper-veil" style="position:absolute; inset:0; background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 100%); pointer-events:none;"></div>
+  
+  <div class="container hosts-body" style="max-width: 600px; margin: 0 auto; position: relative; z-index: 1;">
+    <!-- Top Divider -->
+    <div class="hosts-rule scroll-in" style="margin-bottom: 30px;">
+      <svg viewBox="0 0 400 12" width="100%" style="max-width:400px; display: block; margin: 0 auto;">
         <line x1="0" y1="6" x2="168" y2="6" stroke="#C8960A" stroke-width=".7" opacity=".35"></line>
         <path d="M184,6 L192,1 L200,6 L192,11Z" fill="#C8960A" opacity=".52"></path>
         <line x1="208" y1="6" x2="400" y2="6" stroke="#C8960A" stroke-width=".7" opacity=".35"></line>
       </svg>
     </div>
-    <span class="rsvp-eye scroll-in" style="--sd:.05s">వేడుకలో భాగం అవ్వండి</span>
-    <h2 class="rsvp-heading scroll-in" id="rsvpHeading" style="--sd:.12s">మాతో పాటు ఈ వేడుకలో పాలుపంచుకుంటారా?</h2>
-    <p class="rsvp-sub scroll-in" id="rsvpSub" style="--sd:.22s">మేము మంగళకరమైన దీపాలను వెలిగించి, కోలంతో కల్యాణ మండపాన్ని అలంకరించాము. మా జీవితంలోని ఈ నూతన శుభ అధ్యాయంలో మీ అమూల్యమైన సమక్షాన్ని ఆకాంక్షిస్తున్నాము.</p>
-    <div class="rsvp-cta-wrap scroll-in" style="--sd:.34s">
-      <a id="rsvpWaBtn" class="rsvp-wa-btn" href="https://wa.me/919533331718?text=నమస్తే%20చి.ల.సౌ.%20శ్రీహిత%20%26%20చి.%20సాహిత్!%20మీ%20వివాహ%20వేడుకకు%20తప్పకుండా%20హాజరవుతాము!" target="_blank" rel="noopener noreferrer" aria-label="RSVP via WhatsApp">
-        <span class="rsvp-wa-shimmer"></span>
-        <span class="rsvp-wa-inner"><svg class="rsvp-wa-icon" viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path>
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.554 4.121 1.527 5.855L0 24l6.306-1.506A11.951 11.951 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.37l-.359-.214-3.737.892.93-3.63-.235-.373A9.818 9.818 0 1112 21.818z"></path>
-          </svg>తప్పకుండా వస్తాము</span>
-      </a>
+
+    <!-- Section Heading -->
+    <h2 class="hosts-title scroll-in" style="font-family:'Cinzel', serif; font-size:clamp(1.4rem, 4vw, 2.2rem); color:#3D1E2E; margin-bottom: 24px; font-weight: 500;">
+      ఆహ్వానించువారు :
+    </h2>
+
+    <!-- Host Names -->
+    <div class="hosts-names scroll-in" style="font-family: inherit; font-size: 1.15rem; line-height: 1.8; color: #4A1E6E; margin-bottom: 30px; font-weight: 500;">
+      <p style="margin: 0 0 12px 0;">శ్రీమతి రేవకుంటి సుబ్బల-కిషోర్ చంద్రశేఖర్</p>
+      <p style="margin: 0 0 20px 0;">శ్రీమతి &amp; శ్రీ రేవకుంటి గౌతమి-సంతోష్</p>
     </div>
-    <p class="rsvp-ps scroll-in" style="--sd:.44s">మీ హాజరును ధృవీకరించడానికి మీరు వాట్సాప్‌కు మళ్లించబడతారు.</p>
-    <div class="rsvp-rule scroll-in" style="--sd:.5s">
-      <svg viewBox="0 0 400 12" width="100%" style="max-width:400px">
+
+    <!-- Address details -->
+    <div class="hosts-address scroll-in" style="font-family: inherit; font-size: 0.95rem; line-height: 1.6; color: rgba(74, 30, 110, 0.85); margin-bottom: 24px; border-top: 1px dashed rgba(200, 150, 10, 0.3); border-bottom: 1px dashed rgba(200, 150, 10, 0.3); padding: 15px 0;">
+      <p style="margin: 0;">ఇ.నం. 10-14-1909/5, శ్రీరాంనగర్ కాలనీ, నిజామాబాద్.</p>
+    </div>
+
+    <!-- Contact details -->
+    <div class="hosts-contact scroll-in" style="font-family: 'Raleway', sans-serif; font-size: 1.05rem; color: #3D1E2E; font-weight: 600; letter-spacing: 0.05em;">
+      <p style="margin: 0;">Cell: <a href="tel:9440578027" style="color: inherit; text-decoration: none;">94405 78027</a>, <a href="tel:9000005077" style="color: inherit; text-decoration: none;">90000 05077</a></p>
+    </div>
+
+    <!-- Bottom Divider -->
+    <div class="hosts-rule scroll-in" style="margin-top: 36px;">
+      <svg viewBox="0 0 400 12" width="100%" style="max-width:400px; display: block; margin: 0 auto;">
         <line x1="0" y1="6" x2="168" y2="6" stroke="#C8960A" stroke-width=".7" opacity=".35"></line>
         <path d="M184,6 L192,1 L200,6 L192,11Z" fill="#C8960A" opacity=".52"></path>
         <line x1="208" y1="6" x2="400" y2="6" stroke="#C8960A" stroke-width=".7" opacity=".35"></line>
