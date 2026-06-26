@@ -25,7 +25,7 @@
      If hosting on Vercel/GitHub, you can use a relative path like 'assets/prv.png' 
      or an absolute link like 'https://your-wedding-domain.com/assets/prv.png' -->
 <meta property="og:image" content="assets/prv.png">
-<script type="application/json" id="wedding-config">{"couple":{"bride":"చి.ల.సౌ. శ్రీహిత","groom":"చి. సాహిత్","date":"2026-07-02T08:35:00","venue":"","whatsapp":"9533331718","hashtag":"#SahithWedsSrihitha"},"invite":{"blessing":"కీ.శే. శ్రీమతి సత్యలక్ష్మికృష్ణమూర్తి గార్ల దివ్య ఆశీస్సులతో","brideFather":"శ్రీమతి కాపర్తి లలిత – కీ.శే. శ్రీ కాపర్తి శ్రీనివాస్ గారు","brideMother":"","groomFather":"శ్రీమతి రేణుకుంట సుజాత – కీ.శే. శ్రీ రేణుకుంట చంద్రపాల్ (నిజామాబాద్)","groomMother":"","showGrandparents":false,"brideGF":"","brideGM":"","groomGF":"","groomGM":""},"events":[],"story":{"show":true,"customHashtag":"","tags":[]},"gallery":{"show":true,"layout":"4","photos":["assets/1.jpeg","assets/2.jpeg","assets/3.jpeg","assets/5.jpeg"]},"thingsToKnow":[],"rsvp":{"mode":"whatsapp","heading":"మాతో పాటు ఈ వేడుకలో పాలుపంచుకుంటారా?","subtext":"మేము మంగళకరమైన దీపాలను వెలిగించి, కోలంతో కల్యాణ మండపాన్ని అలంకరించాము. మా జీవితంలోని ఈ నూతన శుభ అధ్యాయంలో మీ అమూల్యమైన సమక్షాన్ని ఆకాంక్షిస్తున్నాము.","btnText":"తప్పకుండా వస్తాము","whatsapp":"9533331718"},"music":{"enabled":false,"src":"","name":""},"calendarUrls":{"google":"https://calendar.google.com/calendar/render?action=TEMPLATE\u0026text=Sahith%20weds%20Srihitha\u0026dates=20260702T083500/20260702T120000\u0026location=","apple":"data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//ShaadiPath//Wedding//EN%0ABEGIN:VEVENT%0ADTSTART:20260702T083500%0ADTEND:20260702T120000%0ASUMMARY:Sahith%20weds%20Srihitha%0ALOCATION:%0ASTATUS:CONFIRMED%0AEND:VEVENT%0AEND:VCALENDAR"}}</script>
+<script type="application/json" id="wedding-config">{"couple":{"bride":"చి.ల.సౌ. శ్రీహిత","groom":"చి. సాహిత్","date":"2026-07-02T08:35:00","venue":"","whatsapp":"9533331718","hashtag":"#SahithWedsSrihitha"},"invite":{"blessing":"కీ.శే. శ్రీమతి సత్యలక్ష్మికృష్ణమూర్తి గార్ల దివ్య ఆశీస్సులతో","brideFather":"శ్రీమతి కాపర్తి లలిత – కీ.శే. శ్రీ కాపర్తి శ్రీనివాస్ గారు (చందూర్)","brideMother":"","groomFather":"శ్రీమతి రేణుకుంట సుజాత – కీ.శే. శ్రీ రేణుకుంట చంద్రపాల్ (నిజామాబాద్)","groomMother":"","showGrandparents":false,"brideGF":"","brideGM":"","groomGF":"","groomGM":""},"events":[],"story":{"show":true,"customHashtag":"","tags":[]},"gallery":{"show":true,"layout":"4","photos":["assets/1.jpeg","assets/2.jpeg","assets/3.jpeg","assets/5.jpeg"]},"thingsToKnow":[],"rsvp":{"mode":"whatsapp","heading":"మాతో పాటు ఈ వేడుకలో పాలుపంచుకుంటారా?","subtext":"మేము మంగళకరమైన దీపాలను వెలిగించి, కోలంతో కల్యాణ మండపాన్ని అలంకరించాము. మా జీవితంలోని ఈ నూతన శుభ అధ్యాయంలో మీ అమూల్యమైన సమక్షాన్ని ఆకాంక్షిస్తున్నాము.","btnText":"తప్పకుండా వస్తాము","whatsapp":"9533331718"},"music":{"enabled":false,"src":"","name":""},"calendarUrls":{"google":"https://calendar.google.com/calendar/render?action=TEMPLATE\u0026text=Sahith%20weds%20Srihitha\u0026dates=20260702T083500/20260702T120000\u0026location=","apple":"data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//ShaadiPath//Wedding//EN%0ABEGIN:VEVENT%0ADTSTART:20260702T083500%0ADTEND:20260702T120000%0ASUMMARY:Sahith%20weds%20Srihitha%0ALOCATION:%0ASTATUS:CONFIRMED%0AEND:VEVENT%0AEND:VCALENDAR"}}</script>
 <script>window.__WEDDING_CONFIG__ = JSON.parse(document.getElementById('wedding-config').textContent);</script>
 <script>
 // Hijack Date constructor to return the correct target date for the wedding countdown
@@ -350,7 +350,8 @@ body.pl-active {
   color: rgba(232, 200, 144, 0.85);
   font-weight: 500;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 0;
+  display: none;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: translateY(20px);
@@ -633,7 +634,7 @@ body.pl-active {
         <div class="fam-dot">◆</div>
         <div class="fam-side">
           <div class="fam-gp" id="iFamGpBride" style="display:none"></div>
-          <div class="fam-parents"><em>చిన్న కుమార్తె</em><br><span id="iBrideParents">శ్రీమతి కాపర్తి లలిత – కీ.శే. శ్రీ కాపర్తి శ్రీనివాస్ గారు</span></div>
+          <div class="fam-parents"><em>చిన్న కుమార్తె</em><br><span id="iBrideParents">శ్రీమతి కాపర్తి లలిత – కీ.శే. శ్రీ కాపర్తి శ్రీనివాస్ గారు (చందూర్)</span></div>
         </div>
       </div>
       <p class="i-close">On the following auspicious occasions</p>
@@ -691,9 +692,7 @@ body.pl-active {
           <span class="sh-eye">మా పరిచయం</span>
           <h2 class="sh-h">వధూవరులు</h2>
         </div>
-        <div class="st-rv-parent-info">
-          శ్రీమతి రేణుకుంట సుజాత – కీ.శే. శ్రీ రేణుకుంట చంద్రపాల్ గార్ల ఏకైక పుత్రుడు
-        </div>
+        <div class="st-rv-parent-info"></div>
         <div class="st-rv-names" id="stRvNames">
           <span class="st-rv-bride" id="stRvBride">చి.ల.సౌ. శ్రీహిత</span>
           <span class="st-rv-amp">&amp;</span>
